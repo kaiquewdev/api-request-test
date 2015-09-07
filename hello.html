@@ -1,0 +1,20 @@
+<head>
+  <title>hello</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{>hello}}
+</body>
+
+<template name="hello">
+    <div class="container">
+        {{#each curInv}}
+            <ul>
+                <li>{{this._id}}</li>
+                <li>{{this.original_id}}</li>
+            </ul>
+        {{/each}}
+    </div>
+</template>
+
