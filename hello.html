@@ -9,12 +9,11 @@
 
 <template name="hello">
     <div class="container">
-        {{#each curInv}}
+        {{#each playersItems}}
             <ul>
-                <li>{{this._id}}</li>
-                <li>{{this.original_id}}</li>
+                <li>{{_id}}</li>
+                <li>{{original_id}}</li>
             </ul>
         {{/each}}
     </div>
 </template>
-
